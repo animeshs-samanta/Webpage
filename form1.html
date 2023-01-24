@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        h1{
+            color: rgb(32, 223, 223);
+        }
+        p{
+            font-style: italic;
+            color: #d90d0dd7;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h1> Payment Form </h1>
+        <h2 style="color: red;"> User Details</h2>
+        <p> Name:* <input type="text" required> </p>
+        <fieldset>
+            <legend>Gender *</legend>
+                <p> Male: <input type="radio" name="gender" id="male" required>
+                    Female: <input type="radio" name="gender" id="female" required>
+                    Others: <input type="radio" name="gender" id="others" required>
+
+                </p>
+        </fieldset> 
+
+        <p> Address: <textarea name="addresss" id="address" cols="40" rows="5"></textarea> </p>
+        <p> Email:* <input type="email" name="email" id="email" required></p>
+        <p> Pin:* <input type="number " name="pin" id="pin" required> </p>
+
+        <h2> Payment Details </h2>
+        <p> Card type:*
+            <select name="card_type" id="card_type" required> 
+                <option value="">--Select a card--</option>
+                <option value="Rupay Card">Rupay Card</option>
+                <option value="Visa Card">Visa Card--</option>
+                <option value="Master Card">Master Card--</option>
+            </select>
+        </p>
+        <p>Account No:* <input type="number" required> </p>
+        <p> CVV:* <input type="password" required > </p>
+        <p> Expairy Date:* <input type="date" required> </p>
+        <input type="Submit" value="Pay Now">
+
+    </form>
+</body>
+</html>
